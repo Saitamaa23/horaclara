@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HoraClara — Agenda y certificados para centros de salud</title>
+<meta name="description" content="HoraClara ordena la agenda de los profesionales de un centro de salud, avisa a cada paciente por correo y prepara los certificados de reembolso. Trabaja con Google Calendar y Gmail de la cuenta que el centro autoriza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --azul: #1e40af;
+    --azul-oscuro: #1e3a8a;
+    --azul-claro: #eff6ff;
+    --texto: #111827;
+    --suave: #4b5563;
+    --borde: #e5e7eb;
+    --fondo: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header {
+    padding-top: 28px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 20px;
+  }
+  .marca {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--azul);
+    text-decoration: none;
+  }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 15px; }
+  nav a { color: var(--suave); text-decoration: none; }
+  nav a:hover { color: var(--azul); text-decoration: underline; }
+  nav a[aria-current="page"] { color: var(--azul); font-weight: 600; }
+  h1, h2 { font-family: "Space Grotesk", "Inter", sans-serif; color: var(--azul-oscuro); line-height: 1.25; }
+  h1 { font-size: 34px; margin: 36px 0 14px; }
+  h2 { font-size: 22px; margin: 40px 0 10px; }
+  p { margin: 0 0 14px; }
+  .entrada { font-size: 19px; color: var(--suave); }
+  ul { padding-left: 22px; margin: 0 0 14px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--azul); }
+  .recuadro {
+    background: var(--azul-claro);
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 18px 0;
+  }
+  .recuadro p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 56px;
+    padding-top: 18px;
+    padding-bottom: 36px;
+    border-top: 1px solid var(--borde);
+    font-size: 15px;
+    color: var(--suave);
+  }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    h1 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="marca" href="index.html">HoraClara</a>
+  <nav aria-label="Páginas de HoraClara">
+    <a href="index.html" aria-current="page">Inicio</a>
+    <a href="privacidad.html">Política de privacidad</a>
+    <a href="terminos.html">Condiciones del servicio</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Agenda y certificados de reembolso para centros de salud</h1>
+
+  <p class="entrada">
+    HoraClara es una aplicación que ordena la agenda de los profesionales de un
+    centro de salud, avisa a cada paciente por correo y prepara los
+    certificados de reembolso de sus atenciones.
+  </p>
+
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Lleva la agenda de cada profesional del centro y evita que dos pacientes
+      queden en el mismo horario.</li>
+    <li>Envía a cada paciente la confirmación de su hora, los cambios, las
+      anulaciones y un recordatorio el día anterior.</li>
+    <li>Prepara los certificados de reembolso que el paciente presenta a su
+      previsión. Ninguno se envía sin que el centro lo revise y lo apruebe.</li>
+  </ul>
+
+  <h2>Cómo usa Google Calendar y Gmail</h2>
+  <p>
+    La aplicación trabaja con la cuenta de Google que el centro autoriza, y
+    solo con los permisos que necesita:
+  </p>
+  <ul>
+    <li><strong>Google Calendar:</strong> crea un evento por cada hora en el
+      calendario del profesional que atiende, lo mueve si la hora cambia y lo
+      borra si se anula. También consulta qué horarios están ocupados, para no
+      ofrecer una hora que ya está tomada.</li>
+    <li><strong>Gmail:</strong> envía los correos a los pacientes desde la
+      cuenta del centro. Solo envía: no lee ni revisa el correo.</li>
+  </ul>
+  <div class="recuadro">
+    <p>
+      Qué datos de Google usa la aplicación, qué no hace con ellos, dónde se
+      guardan y cómo revocar el acceso está en la
+      <a href="privacidad.html">política de privacidad</a>. Las reglas de uso
+      están en las <a href="terminos.html">condiciones del servicio</a>.
+    </p>
+  </div>
+
+  <h2>Quién la opera</h2>
+  <p>
+    HoraClara la instala y la opera Patricio Heresmann, persona natural, para
+    cada centro que la contrata. No es una aplicación de registro abierto: la
+    usan solo los centros con los que tiene un acuerdo de servicio.
+  </p>
+
+  <h2>Contacto</h2>
+  <p>
+    Para consultas sobre la aplicación o sobre sus datos, escríbanos a
+    <a href="mailto:horaclara.contacto@gmail.com">horaclara.contacto@gmail.com</a>.
+  </p>
+</main>
+
+<footer>
+  HoraClara ·
+  <a href="privacidad.html">Política de privacidad</a> ·
+  <a href="terminos.html">Condiciones del servicio</a> ·
+  <a href="mailto:horaclara.contacto@gmail.com">horaclara.contacto@gmail.com</a>
+</footer>
+
+</body>
+</html>
